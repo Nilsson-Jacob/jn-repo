@@ -16,6 +16,9 @@ function App() {
           alt="Responsive image"
           width="100%"
         ></img>
+        <div>
+          <text>Hello</text>
+        </div>
         <Nav />
         <Routes>
           <Route path="/about" element={<About />} />

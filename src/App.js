@@ -1,15 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
 import background from "./images/tree.jpg";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-import About from "./About";
+import About from "../About";
 import Nav from "./Nav";
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
       <div>
         <img
           src={background}
@@ -23,7 +22,7 @@ function App() {
           {/* Content */}
         </Routes>
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 

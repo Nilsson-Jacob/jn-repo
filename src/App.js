@@ -3,7 +3,7 @@ import "./App.css";
 import background from "./images/tree.jpg";
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-import About from "../About";
+import About from "./About";
 import Nav from "./Nav";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         </div>
         <Nav />
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="#/about" element={<About />} />
           {/* Content */}
         </Routes>
       </div>
